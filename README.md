@@ -25,13 +25,24 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- Purpose
+A simple game where players try to guess a randomly generated number and receive hints to help them find the correct answer.
 
-## 📸 Demo
+- Bugs Found
+Hint messages were reversed (high guesses said "go higher" and low guesses said "go lower").
+Hard mode displayed the wrong number range compared to the secret number being generated.
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- Fixes Applied
+Corrected the hint logic in check_guess().
+Updated the number generator to match the selected difficulty range.
+Refactored game logic into logic_utils.py to keep the code organized and easier to maintain.
+
+## Demo Walkthrough
+1. User enters a guess of 40
+2. Game returns "Too Low"
+3. User enters a guess of 70 → "Too High"
+4. Score updates correctly after each guess
+5. Game ends after the correct guess
 
 
 ## 🚀 Stretch Features
