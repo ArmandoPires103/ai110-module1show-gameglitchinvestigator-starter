@@ -82,6 +82,7 @@ attempt_limit_map = {
     "Normal": 8,
     "Hard": 5,
 }
+
 attempt_limit = attempt_limit_map[difficulty]
 
 low, high = get_range_for_difficulty(difficulty)
